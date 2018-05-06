@@ -51,7 +51,7 @@ var winningscore = function (num) {
         if (gameStatus) {
             var dice1 = Math.ceil(Math.random() * 6);
             var dice2 = Math.ceil(Math.random() * 6);
-            if (dice1 === dice2) {
+            if (dice1 === dice2 && dice1!==6) {
                 current = 0;
                 document.querySelector('#current-' + active).textContent = current;
                 NextPlayer();
